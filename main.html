@@ -1,165 +1,36 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Positioning Items</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        
-        /*////////////////////
-        // Positioning items    
-        //////////////////////
-        
-        Reset *
-        Display: inline vs block
-        https://www.w3schools.com/cssref/pr_class_display.asp
-    
-        Box-sizing
-        https://www.w3schools.com/css/css3_box-sizing.asp
-        
-        Using percentages and max-width
-        https://www.w3schools.com/cssref/css_units.asp
-    
-        Float and clear
-        https://www.w3schools.com/cssref/pr_class_float.asp
-        
-        Flexbox - https://www.w3schools.com/css/css3_flexbox.asp
-        
-        Absolute/Relative positioning
-        https://www.w3schools.com/cssref/pr_class_position.asp
-          
-        Centering
-        https://www.w3schools.com/css/css_align.asp
-        
-        */
-
-        * {
-            margin: 0;
-            
-        }
-
-        body {
-
-        }
-
-        .box {
-            height: 100px;
-            width: 100px;
-            border: 1px solid black;
-            color: aliceblue;
-            display: inline-block;
-            margin-bottom: 10px;
-            
-                      
-        }
-
-        #red {
-            background-color: red;
-        }
-
-        #green {
-            background-color: green;
-        }
-
-        #blue {
-            background-color: turquoise;
-        }
-
-        #yellow {
-            background-color: yellow;
-            color: black;
-        }
-
-        #orange {
-            background-color: orange;
-        }
-
-        .clear {
-            clear: both;
-        }
-
-        /* img */
-        img {
-
-        }
-
-        /* container */
-        .container {
-
-        }
-
-        /* relative and absolute positioning with blue */
-        #blue {
-
-        }
-
-        p {
-            color: darkred;
-        }
-
-        p {
-            color: brown;
-            margin: 10px;
-        }
-
-        #p2 {
-            color: rgb(78, 3, 3);
-            font-size: 30px;
-        }
-
-        .vihrea {
-            color: rgb(1, 52, 1);
-        }
-
-        main {
-            background-color: teal;
-            padding: 10px;
-            border: 3px solid black;
-            border-radius: 5px;
-            width: 400px;
-            margin: auto;
-
-            
-        }
-
-        img {
-            width: 400px;
-            
-        }
-    
-    
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
-
 <body>
-    <nav>
-        <div class="box" id="red">Box 1</div>
-        <div class="box" id="green">Box 2</div>
-        <div class="box" id="blue">Box 3</div>
-        <div class="box" id="yellow">Box 4</div>
-        <div class="box" id="orange">Box 5</div>
-    </nav>
-    <!-- Float continues, clearing -->
+    <header>
+        <nav class="home-navbar">
+            <h2 id="logo">Lounari.</h2>
+            <ul>
+                <li><a href="#">Etusivu</a></li>
+                <li><a href="#">Ruokalistat</a></li>
+                <li><a href="#">Yhteistiedot</a></li>
+              </ul>
+        </nav>
+    </header>
     <main>
-        <h1>Heading 1</h1>
-        <h1>Heading 2</h1>
-
-
-    <!-- Responsive images and centering -->
-
-    <p class="vihrea">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem culpa doloremque necessitatibus reiciendis similique incidunt ab nostrum, architecto aliquam, earum cumque, laboriosam consequuntur ipsa officiis ad quisquam ex a voluptates.
-    Distinctio repellat nemo voluptates molestias quis corrupti soluta! Sit odio esse porro error quis distinctio. Quae, quidem inventore nostrum perferendis dolores ex mollitia voluptatem natus sapiente. Libero est atque amet!</p>
-    <p id="p2" class="vihrea">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis aliquam quae corporis repellat enim necessitatibus eius similique nesciunt, atque tempore magni qui doloremque? Et, modi dolor itaque ipsa dolores qui!</p>
-    <img src="orava-kuviasuomesta.fi-roine-piirainen.jpg" alt="orava">
-
-
-
+        <p id="message">Tänne lisää sisältöä seuraavina viikkoina</p>
+        <div class="info">
+            <img  id="toprightimg" src="images/imageedit_1_5409932829.png"">
+            <img class="info-img" src="images/Restaurant_Näsinneula.jpg" alt="image of our restaurant.">
+            <h2 class="info-text">LISÄÄ MEISTÄ<br><b>Tämä on meidän tarinamme</b><br></h2>
+            <p class="info-text"></b><br>Lounarin tuotevalikoima on omassa keittiössä valmistettu. käytämme aina tuoreita raaka-aineita ja otamme huomioon erityisruokavaliot. Valikoimme vaihtelee sesonkien ja saatavuuden päivittäin. Tavoitteennamme on Metropolian kampusuudistuksen myötä palvella tulevaisuudessa yhdenvertaista kaikkia metropolialaisia.</p>
+        </div>
     </main>
     <footer>
-        <p>lul</p>
+        <p>Copyright</p>
     </footer>
-    
 </body>
-
 </html>
