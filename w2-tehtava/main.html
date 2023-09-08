@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="dialog.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <script src="1.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav class="home-navbar">
-            <h2 id="logo">Lounari.</h2>
+            <h2 id="logo">Ravintola.</h2>
             <ul>
                 <li><a href="#">Etusivu</a></li>
                 <li><a href="#">Ruokalistat</a></li>
@@ -22,6 +24,7 @@
     </header>
     <main>
         <p id="message">Tänne lisää sisältöä seuraavina viikkoina</p>
+        <button id="open_dialog">Open Dialog</button>
         <div class="info">
             <img  id="toprightimg" src="images/imageedit_1_5409932829.png"">
             <img class="info-img" src="images/Restaurant_Näsinneula.jpg" alt="image of our restaurant.">
@@ -32,5 +35,31 @@
     <footer>
         <p>Copyright</p>
     </footer>
+    <dialog>
+        <img src="images/online-registration-illustration-concept-free-vector.jpg" alt="Illustration of Location Services" id="dialog-img" />
+        <h2 id="dialog_title" class="h2">Login:</h2>
+        <form action="" method="get" class="form-example">
+            <div class="form-example">
+              <label for="name">Enter your name: </label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div class="form-example">
+              <label for="email">Enter your email: </label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+                <label for="password">Enter your password: </label>
+                <input type="password" name="password" id="password"  required  pattern="^(?!.*[\s])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"/>
+            </div>
+            <div class="flex flex-space-between">
+                <button id="close_dialog">Close</button>
+                <button type="submit" id="confirm_dialog" class="cta">Confirm</button>
+            </div>
+            
+              
+            
+          </form>
+        
+    </dialog>
 </body>
 </html>

@@ -5,13 +5,33 @@
     font-family: 'Roboto', sans-serif;
 }
 
+:root {
+    --blue: #4b4eff;
+    --bluelight: #D2DAFF;
+    --violetlight: #c0c1fe;
+    --ratio: 3.74;
+    --cta-color: rgb(101, 29, 202);
+    --light-color-bg: rgba(238, 241, 247, 0.881);
+    --dark-color-bg: rgb(55, 65, 81);
+    --grey-color: rgb(107, 114, 128);
+    --leading: 0.025em;
+}
+
 header, main {
     margin: auto;
     width: 80%;
 }
 
+body {
+    background-color: var(--bluelight);
+}
+
+body:has(dialog[open]) {
+    overflow-y: hidden;
+}
+
 .home-navbar {
-    background-color: #1e272e;
+    background-color: var(--blue);
     padding: 30px;
 }
 
@@ -36,10 +56,11 @@ li {
 }
 
 .info {
-    background-color: #dddddd;
+    background-color: var(--violetlight);
     padding: 70px 0 70px 0;
     color: #3a393afb;
     margin-bottom: 50px;
+    margin-top: 100px;
     position: relative;
     
 }
@@ -70,8 +91,8 @@ b {
 
 
 footer {
-    background-color: #530106;
-    color: #646364fb;
+    background-color: var(--blue);
+    color: #1c1c1cfb;
     text-align: center;
     padding: 30px;
 }
@@ -94,14 +115,28 @@ a:active {
 }
 
 #message {
-    margin: 50px 0 225px 0;
+    margin: 30px 0 30px 0;
 }
 
 
 #toprightimg {
-    width: 300px;
+    width: 275px;
     position: absolute;
     top: -75px;
     right: 40px;
     
 }
+
+
+input[type=text],input[type=password],input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+
+  
