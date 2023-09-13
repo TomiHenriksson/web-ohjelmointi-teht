@@ -1,18 +1,20 @@
 button {
-    display: block;
-    margin-top: 2rem;
-    width: calc(44px * var(--ratio));
-    height: 44px;
-    border-radius: calc(3px * var(--ratio));
-    border: none;
-    letter-spacing: ccalc(3 * var(--leading, 0.025em));
-    font-family: inherit;
-    color: var(--grey-color);
-    background-color: var(--light-color-bg);
-    font-size: large;
-    font-weight: 700;
-  }
-  
+  width: calc(44px * var(--ratio));
+  height: 44px;
+  border-radius: calc(3px * var(--ratio));
+  border: none;
+  letter-spacing: calc(3 * var(--leading, 0.025em)); /* Corrected ccalc to calc */
+  font-family: inherit;
+  color: var(--grey-color);
+  background-color: var(--light-color-bg);
+  font-size: large;
+  font-weight: 700;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
   #close_dialog {
     width: 48%;
     float: left;
